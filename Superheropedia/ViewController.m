@@ -52,9 +52,11 @@
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SuperheroCell"];
     NSDictionary *hero = [self.heroes objectAtIndex:indexPath.row];
+    NSURL *url = [NSURL URLWithString:[hero objectForKey:@"avatar_url"]];
 
     cell.textLabel.text = [hero objectForKey:@"name"];
-    
+    cell.detailTextLabel.text = [hero objectForKey:@"description"];
+    cell.imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
 //    cell.detailTextLabel.text = ((NSNumber *) [hero objectForKey:@"age"]).stringValue;
 //= cell.detailTextLabel.text = [NSString stringWithFormat:@"%@", [hero objectForKey:@"age"]];
 // previous two lines are equal however the line used is more common
