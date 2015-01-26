@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0Mu-0q-FeN">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Known Superheroes-->
@@ -16,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oN6-jD-ly7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="72" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="oN6-jD-ly7">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -49,8 +50,16 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oN6-jD-ly7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Dwz-Zf-WxT"/>
+                            <constraint firstItem="oN6-jD-ly7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Y2s-T9-cEy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oN6-jD-ly7" secondAttribute="trailing" constant="-16" id="euC-5M-fY8"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oN6-jD-ly7" secondAttribute="bottom" id="pxu-sD-USx"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Known Superheroes" id="a0J-HY-M5s"/>
+                    <navigationItem key="navigationItem" title="Known Superheroes" id="a0J-HY-M5s">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="e1C-Zq-f3X"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="superheroTableView" destination="oN6-jD-ly7" id="Uty-AH-8QA"/>
                     </connections>

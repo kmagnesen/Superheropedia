@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F91D5ED21A76C0E5000CE1CD /* Superhero.m in Sources */ = {isa = PBXBuildFile; fileRef = F91D5ED11A76C0E5000CE1CD /* Superhero.m */; };
 		F96FCCED1A6D691D00AAC041 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F96FCCEC1A6D691D00AAC041 /* main.m */; };
 		F96FCCF01A6D691D00AAC041 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F96FCCEF1A6D691D00AAC041 /* AppDelegate.m */; };
 		F96FCCF31A6D691D00AAC041 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F96FCCF21A6D691D00AAC041 /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F91D5ED01A76C0E5000CE1CD /* Superhero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Superhero.h; sourceTree = "<group>"; };
+		F91D5ED11A76C0E5000CE1CD /* Superhero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Superhero.m; sourceTree = "<group>"; };
 		F96FCCE71A6D691D00AAC041 /* Superheropedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheropedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F96FCCEB1A6D691D00AAC041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F96FCCEC1A6D691D00AAC041 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				F96FCCEF1A6D691D00AAC041 /* AppDelegate.m */,
 				F96FCCF11A6D691D00AAC041 /* ViewController.h */,
 				F96FCCF21A6D691D00AAC041 /* ViewController.m */,
+				F91D5ED01A76C0E5000CE1CD /* Superhero.h */,
+				F91D5ED11A76C0E5000CE1CD /* Superhero.m */,
 				F96FCCF41A6D691D00AAC041 /* Main.storyboard */,
 				F96FCCF71A6D691D00AAC041 /* Images.xcassets */,
 				F96FCCF91A6D691D00AAC041 /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				F96FCCF31A6D691D00AAC041 /* ViewController.m in Sources */,
 				F96FCCF01A6D691D00AAC041 /* AppDelegate.m in Sources */,
 				F96FCCED1A6D691D00AAC041 /* main.m in Sources */,
+				F91D5ED21A76C0E5000CE1CD /* Superhero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 				F96FCD0C1A6D691D00AAC041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F96FCD0D1A6D691D00AAC041 /* Build configuration list for PBXNativeTarget "SuperheropediaTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				F96FCD0F1A6D691D00AAC041 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
